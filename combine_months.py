@@ -4,9 +4,9 @@
 import sys
 import pandas as pd
 
-def combine_files(input_files):
+def combine_files(input_files, output_file):
     # Create an empty DataFrame to store the combined data
-    combined_data = pd.DataFrame()
+    combined_data = pd.DataFrame(columns=['uuid', 'os', 'home', 'work', 'gender', 'age'])
 
     # Loop through the input files
     for file in input_files:

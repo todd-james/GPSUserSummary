@@ -45,4 +45,4 @@ rule combine_all:
     output: 
         f"{os.environ['month_summary_path']}/uuid_summary_2122.csv"
     shell:
-        "touch {output}"
+        "python combine_months.py {output} {input}"

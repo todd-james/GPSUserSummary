@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+combine_all        1              1              1
+total              2              1              1
+
+Select jobs to execute...
+
+[Mon Jan 22 23:18:57 2024]
+rule combine_all:
+    input: /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202101_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202102_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202103_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202104_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202105_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202106_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202107_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202108_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202109_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202110_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202111_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202112_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202201_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202202_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202203_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202204_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202205_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202206_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202207_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202208_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202209_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202210_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202211_uuid_summary.csv, /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/Monthly_Totals/202212_uuid_summary.csv
+    output: /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/uuid_summary_2122.csv
+    jobid: 1
+    reason: Missing output files: /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/uuid_summary_2122.csv
+    resources: tmpdir=/var/folders/dv/9r6chhnj4n7_pz9y8csld3km0000gn/T
+
+[Mon Jan 22 23:18:57 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Mon Jan 22 23:18:57 2024]
+localrule all:
+    input: /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/uuid_summary_2122.csv
+    jobid: 0
+    reason: Input files updated by another job: /Volumes/kyotogps-db/VisitDetection/Month_User_Summary/uuid_summary_2122.csv
+    resources: tmpdir=/var/folders/dv/9r6chhnj4n7_pz9y8csld3km0000gn/T
+
+[Mon Jan 22 23:18:57 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-01-22T231757.217402.snakemake.log
